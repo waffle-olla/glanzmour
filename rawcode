@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GLANZMOUR - Product Display</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    /* Base & Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #222;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    /* HELPER FONT STYLES */
+    h1.brand-name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 0.25rem;
+      color: #222;
+    }
+
+    p.tagline {
+      font-size: 1.125rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #555;
+      font-weight: 600;
+    }
+
+    p.brand-desc {
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      font-size: 1rem;
+      color: #444;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    /* PRODUCTS GRID */
+    .products-grid {
+      display: grid;
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto 3rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Responsive Grid: Mobile-first */
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 600px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* PRODUCT CARD */
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      max-width: 150px;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      object-fit: contain;
+    }
+
+    .product-name {
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-price {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .product-desc {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
+      max-width: 280px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #fff;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #555;
+    }
+
+    footer a {
+      color: #505050;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- 1. Hero section -->
+  <header>
+    <h1 class="brand-name">GLANZMOUR</h1>
+    <p class="tagline">Little design, Big shine, Simply you</p>
+  </header>
+
+  <!-- 2. Brand description -->
+  <section>
+    <p class="brand-desc">
+      GLANZMOUR is a refined collection of uniquely crafted products designed to bring elegance and minimalism into your everyday life. Discover timeless style and subtle sophistication with every piece.
+    </p>
+  </section>
+
+  <!-- 3. Product grid -->
+  <main>
+    <section class="products-grid" aria-label="Product display grid">
+      <!-- Product 1 -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=150&q=80" alt="Product 1 - Elegant bracelet" class="product-image" />
+        <h2 class="product-name">Classic Bracelet</h2>
+        <p class="product-price">$29.99</p>
+        <p class="product-desc">A subtle and elegant bracelet perfect for any occasion.</p>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=150&q=80" alt="Product 2 - Minimalist bag charm" class="product-image" />
+        <h2 class="product-name">Bag Charm</h2>
+        <p class="product-price">$18.50</p>
+        <p class="product-desc">Add a touch of charm to your bag with our refined design.</p>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1536305031385-2e6cbc0e8f9e?auto=format&fit=crop&w=150&q=80" alt="Product 3 - Decorative sticker set" class="product-image" />
+        <h2 class="product-name">Sticker Set</h2>
+        <p class="product-price">$12.00</p>
+        <p class="product-desc">Elegant stickers crafted for stylish personalization.</p>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1542838687-19ed1800d348?auto=format&fit=crop&w=150&q=80" alt="Product 4 - Modern ring" class="product-image" />
+        <h2 class="product-name">Minimalist Ring</h2>
+        <p class="product-price">$37.00</p>
+        <p class="product-desc">Sleek and timeless ring designed with simplicity in mind.</p>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1463107971871-fbac9ddb920f?auto=format&fit=crop&w=150&q=80" alt="Product 5 - Elegant earrings" class="product-image" />
+        <h2 class="product-name">Elegant Earrings</h2>
+        <p class="product-price">$24.75</p>
+        <p class="product-desc">Delicate earrings to complete your elegant look.</p>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1520614073990-dd6022d936b3?auto=format&fit=crop&w=150&q=80" alt="Product 6 - Sophisticated pendant" class="product-image" />
+        <h2 class="product-name">Sophisticated Pendant</h2>
+        <p class="product-price">$45.00</p>
+        <p class="product-desc">A pendant that adds a subtle shine to any outfit.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- 5. Footer -->
+  <footer>
+    Contact us on Instagram: 
+    <a href="https://instagram.com/glanzmour" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile link">
+      @glanzmour
+    </a>
+  </footer>
+</body>
+</html>
