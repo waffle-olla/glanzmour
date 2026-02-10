@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLANZMOUR - Little Details. Big Shine. Simply You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Typography */
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            background-color: #FFFFFF; /* Light pink background shape */
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Description Section */
+        .description {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .description p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+            background-color: #FFFFFF; /* Dark grey with a little blue tint background shape */
+            color: #000000;
+            padding: 1rem 1.5rem;
+            border-radius: 15px;
+            line-height: 1.8;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Products Section */
+        .products {
+            padding: 2rem;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-price {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+
+        .footer p {
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        /* Tablet */
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 4rem;
+            }
+
+            .hero p {
+                font-size: 1.5rem;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            .hero h1 {
+                font-size: 5rem;
+            }
+
+            .hero p {
+                font-size: 1.8rem;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>GLANZMOUR</h1>
+        <p>Little Details. Big Shine. Simply You</p>
+    </section>
+
+    <!-- Description Section -->
+    <section class="description">
+        <p>Discover GLANZMOUR, where every little detail shines brightly to reflect your unique self. Our curated collection emphasizes elegance and simplicity, bringing out the best in you with timeless pieces that speak volumes.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+1" alt="Product 1" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Elegant Necklace</h3>
+                    <p class="product-price">$49.99</p>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+2" alt="Product 2" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Delicate Earrings</h3>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+3" alt="Product 3" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Classic Bracelet</h3>
+                    <p class="product-price">$39.99</p>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+4" alt="Product 4" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Minimalist Ring</h3>
+                    <p class="product-price">$19.99</p>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+5" alt="Product 5" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Shimmering Brooch</h3>
+                    <p class="product-price">$34.99</p>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+6" alt="Product 6" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Timeless Watch</h3>
+                    <p class="product-price">$79.99</p>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+7" alt="Product 7" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Pearl Pendant</h3>
+                    <p class="product-price">$59.99</p>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+8" alt="Product 8" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Gold Hoops</h3>
+                    <p class="product-price">$44.99</p>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+9" alt="Product 9" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Silver Chain</h3>
+                    <p class="product-price">$54.99</p>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+10" alt="Product 10" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Crystal Studs</h3>
+                    <p class="product-price">$24.99</p>
+                </div>
+            </div>
+            <!-- Product 11 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+11" alt="Product 11" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Vintage Locket</h3>
+                    <p class="product-price">$69.99</p>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+12" alt="Product 12" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Band</h3>
+                    <p class="product-price">$89.99</p>
+                </div>
+            </div>
+            <!-- Product 13 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+13" alt="Product 13" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Rose Gold Bangle</h3>
+                    <p class="product-price">$64.99</p>
+                </div>
+            </div>
+            <!-- Product 14 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+14" alt="Product 14" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Enamel Pin</h3>
+                    <p class="product-price">$14.99</p>
+                </div>
+            </div>
+            <!-- Product 15 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+15" alt="Product 15" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Charm Bracelet</h3>
+                    <p class="product-price">$49.99</p>
+                </div>
+            </div>
+            <!-- Product 16 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+16" alt="Product 16" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Statement Ring</h3>
+                    <p class="product-price">$74.99</p>
+                </div>
+            </div>
+            <!-- Product 17 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+17" alt="Product 17" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Layered Necklace</h3>
+                    <p class="product-price">$59.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Follow us on <a href="https://www.instagram.com/glanzmour" target="_blank">Instagram</a> for more updates.</p>
+    </footer>
+</body>
+</html>
+```
