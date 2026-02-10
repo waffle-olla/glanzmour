@@ -328,6 +328,22 @@
                     <p class="product-price">$59.99</p>
                 </div>
             </div>
+            <!-- Product 18 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+18" alt="Product 16" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Statement Ring</h3>
+                    <p class="product-price">$74.99</p>
+                </div>
+            </div>
+            <!-- Product 19 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Product+19" alt="Product 17" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Layered Necklace</h3>
+                    <p class="product-price">$59.99</p>
+                </div>
+            </div>
         </div>
     </section>
 
